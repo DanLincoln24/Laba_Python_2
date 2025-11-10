@@ -143,10 +143,10 @@ def test_log():
         os.chdir(test_dir)
 
         # Создаем лог-файл для теста
-        with open('log_file', 'w') as f:
+        with open('shell.log', 'w') as f:
             f.write('test log entry\n')
 
-        log_file = Path('log_file')
+        log_file = Path('shell.log')
         assert log_file.exists()
     finally:
         os.chdir(old_dir)
